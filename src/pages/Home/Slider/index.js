@@ -1,6 +1,8 @@
 import React from 'react'
 import SliderImg from './SliderImg'
-import './slider.css'
+
+import { Root, SliderWrapper } from './styles'
+
 
 const Slider = () => {
 
@@ -16,24 +18,16 @@ const Slider = () => {
     { url: 'assets/photos/slide-6.jpg' }
   ]
 
-  const styles = {
-    root: {
-      height: '15rem',
-      display: 'flex',
-      overflow: 'hidden'
-    }
-  }
-
   return (
-    <div style={styles.root}>
-      <div className='sliderWrapper'>
+    <Root>
+      <SliderWrapper>
         {photos.map(photo => {
           return (
             <SliderImg url={photo.url}/>
           )
         })}
-      </div>
-    </div>
+      </SliderWrapper>
+    </Root>
   )
 }
 
