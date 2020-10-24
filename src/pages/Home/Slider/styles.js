@@ -23,6 +23,7 @@ export const Root = styled.div`
     z-index: 10;
   }
 `
+
 export const SliderWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -36,4 +37,13 @@ export const SliderWrapper = styled.div`
       transform: translateX(-200px);
     }
   }
+`
+
+export const SliderImg = styled.div`
+  background-image: url(${props => props.url});
+  height: 9rem;
+  width: 14rem;
+  margin: 0 .7rem;
+  background-size: cover;
+  border-radius: .3rem;
 `

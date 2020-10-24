@@ -1,7 +1,5 @@
 import React from 'react'
-import SliderImg from './SliderImg'
-
-import { Root, SliderWrapper } from './styles'
+import { Root, SliderWrapper, SliderImg } from './styles'
 
 
 const Slider = () => {
@@ -23,7 +21,7 @@ const Slider = () => {
       <SliderWrapper>
         {photos.map(photo => {
           return (
-            <SliderImg url={photo.url}/>
+            <SliderImg url={photo.url} />
           )
         })}
       </SliderWrapper>
