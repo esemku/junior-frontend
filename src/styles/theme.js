@@ -4,7 +4,8 @@ export const theme = {
     primary: "#0066ff",
     linkWater: "#f8fafd",
     shuttleGray: "#5f6369",
-    white: "#ffffff"
+    white: "#ffffff",
+    loader: "#00BFFF"
   },
   font: {
     size: {
