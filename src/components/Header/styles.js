@@ -19,9 +19,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.div`
-
+  padding-top: 1.2rem;
 `;
 
 export const NavItem = styled(NavLink)`
-
+  margin: 0 1rem;
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.black};
+  font-size: ${({ theme }) => theme.font.size.base};
+  font-weight: ${({ theme }) => theme.font.weight.bold};
 `
