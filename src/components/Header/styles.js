@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 import logoImg from "./assets/logo.svg";
 
@@ -16,3 +17,11 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+export const Nav = styled.div`
+
+`;
+
+export const NavItem = styled(NavLink)`
+
+`

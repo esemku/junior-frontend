@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { Normalize } from "styled-normalize";
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Header } from "components/Header";
 import { Home } from "pages/Home";
@@ -8,10 +9,14 @@ import { Home } from "pages/Home";
 import { GlobalStyle, theme } from "./styles";
 
 export const App = () => (
-  <ThemeProvider theme={theme}>
-    <Normalize />
-    <GlobalStyle />
-    <Header />
-    <Home />
-  </ThemeProvider>
+  <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <Normalize />
+      <GlobalStyle />
+      <Header />
+      <Switch>
+        <Route path='/' component={Home} />
+      </Switch>
+    </ThemeProvider>
+  </BrowserRouter>
 );
