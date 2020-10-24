@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Header } from "components/Header";
 import { Home } from "pages/Home";
-import { MyProfile } from "pages/MyProfile";
+import MyProfile from "pages/MyProfile";
 
 import { GlobalStyle, theme } from "./styles";
 
