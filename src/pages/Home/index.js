@@ -12,7 +12,6 @@ export const Home = () => (
     <Intro />
     <Task1 />
     <Slider />
-
     <Task2 />
     <Task3 />
     <RulesAndSuggestions />
