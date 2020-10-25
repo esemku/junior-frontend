@@ -30,10 +30,10 @@ export const SliderWrapper = styled.div`
   animation-timing-function: linear;
   @keyframes slide {
     0% {
-      transform: translateX(-800px);
+      transform: translateX(-40rem);
     }
     100% {
-      transform: translateX(-200px);
+      transform: translateX(0);
     }
   }
 `
