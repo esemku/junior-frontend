@@ -15,4 +15,4 @@ You will also see any lint errors in the console.
 
 ## Heroku deploy
 
-https://morning-lowlands-69556.herokuapp.com/start
+https://morning-lowlands-69556.herokuapp.com/
